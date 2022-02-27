@@ -1,0 +1,13 @@
+Timezones are now multivalued. They have their own table.
+
+
+
+HeadOfState no longer has Date Assumed Office. The primary key is just the name.
+Instead, I added the Date Assumed Office to the country.
+
+For example:
+Elizabeth II has an entry in HeadOfState table that has just her name, date of birth, and political party.
+
+United Kingdom has an entry in Country table, that has HeadOfState: Elizabeth II, Date Assumed Office: 1952-02-06.
+
+Antigua and Barbuda has an entry in Country table, that has HeadOfState: Elizabeth II, Date Assumed Office: 1981-11-01.

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/formstyles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="formdiv" class="container">
+		<form id="form" action="", method="post", data-url="http://127.0.0.1:5000/api/viewCountryVisits">
+			<label for="countryname">Country Name</label>
+			<input type="text" id="countryname" name="countryname" placeholder="Please enter a country name..." required>
+
+			<input type="submit" value="Submit">
+		</form>
+
+		<div id="result" class="container">
+			
+		</div>
+
+		<form class="redirect" action="index.html">
+			<input type="submit" value="Home"/>
+		</form>
+        
+        <form class="redirect" action="http://127.0.0.1:5000/api/reconnect">
+			<input type="submit" value="Reconnect to Database"/>
+		</form>
+			
+	</div>
+
+	<script src="js/form.js"></script>
+</body>
+
+</html>

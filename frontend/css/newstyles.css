@@ -1,0 +1,24 @@
+.new-ul-class {
+    list-style-type: none;
+}
+
+.new-ul-class li::before {
+    color: #5f4dee;
+    content: "\25AA";
+    margin-right: 0.5em;
+    font-weight: bold;
+    font-size: 2em;
+    display: inline-block;
+    line-height: 2rem;
+    vertical-align: sub;
+}
+
+.footer-ul-class {
+    list-style-type: none;
+}
+
+.footer-ul-class li::before {
+    color: white;
+    content: "\25AA";
+    margin-right: 0.5em;
+}
